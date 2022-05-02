@@ -1,13 +1,32 @@
 'use strict'
 
-const objct ={
-    color: white 
-    model: Toyota 
-    year: 2022
+const car = {
+   
+    Color: "White" ,
+
+    Model: "Toyota" ,
+
+    Type: "Camry" ,
+
+    year: "2021" ,
 
 }
-const MyJSONobjct = JSON.stringify(objct);
-localStorage.setItem("objct", MyJSONobjct);
-let info = localStorage.getItem(objct);
-let objct = JSON.parse(info);
-console.log(objct.name);
+console.log(car)
+
+let carString = JSON.stringify(car);
+
+console.log (carString);
+
+localStorage.setItem("storecar", carString);
+
+let unstorecar = localStorage.getItem("storecar");
+
+let mycar = "The newist car is" + mycar.Color + "" + mycar.Model + "" + mycar.Type + "" + mycar.year ;
+
+const section = document.getElementById ("uno");
+
+const h2elm = document.createElement ('h2');
+h2elm.textContent(newCar);
+section.appendChild(h2elm)
+
+
